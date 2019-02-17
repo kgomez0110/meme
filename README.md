@@ -1,3 +1,7 @@
+<img src="./public/assets/memerdreamr.png"
+     alt="Logo"
+     style="float: left;" />
+
 ## Try it out!
 This website is best experienced spoiler free: www.memerdreamr.com
 
