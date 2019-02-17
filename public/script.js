@@ -2,6 +2,7 @@ var z = 0;
 var started = false;
 var imgUrl = "";
 var audioUrl = "";
+var bgUrl = "";
 function drawImage(event) {
   if (started){
     var old_html = document.getElementById("screen").innerHTML;
@@ -22,7 +23,11 @@ function start(){
   document.getElementById("menu").style.z_index = -1;
   imgUrl = document.getElementById("myFile").value;
   audioUrl = document.getElementById("myAudio").value;
+  bgUrl = document.getElementById("myBackground").value;
   document.getElementById("menu").innerHTML = "";
   document.getElementById("menu").className = "";
+  console.log(document.getElementById("page_body").style.background);
+  document.getElementById("page_body").style.background = "url(" + bgUrl + ")";
+  console.log(document.getElementById("page_body").style.background);
   started = true;
 }

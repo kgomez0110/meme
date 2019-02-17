@@ -1,20 +1,21 @@
 <!DOCTYPE html>
     <head>
-          <title>Album Select</title>
+          <title>i dream in memes</title>
           <link rel="stylesheet" type="text/css" href="index.css"/>
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
              rel="stylesheet">
       </head>
 
 
-  <body id="page_body">
-    <body background="testbackground.jpg">
-      <div background="testbackground.jpg" onClick="drawImage(event)" id="screen" style="position: absolute; height:100%; width: 100%; z-index: -1;"></div>
+
+    <body id="page_body" background="testbackground.jpg">
+      <div onClick="drawImage(event)" id="screen" style="position: absolute; height:100%; width: 100%; z-index: -1;"></div>
       <div class="center" style="z-index: 1" id="menu">
                 <p class="title">Click, Spam, and Listen!</p>
     			<div class="center-wrapper">
-            Image Url: <input type="text" id="myFile" name="myFile">
+            Sticker Url: <input type="text" id="myFile" name="myFile">
             Audio Url: <input type="text" id="myAudio">
+            Background URL: <input type="text" id="myBackground" name="myBackground">
             <button onclick="start()" class="host">Go!</button>
     			</div>
         </div>
@@ -25,7 +26,7 @@
             // Argument 1
             var bitmojiWebPickerIconClass =
               'my-bitmoji-stickerpicker-icon-target';
-    
+
             // Argument 2
             var uiOptions = {
               onStickerPickCallback:
@@ -35,7 +36,7 @@
                 },
               webpickerPosition: 'bottomRight',
             };
-    
+
             // Argument 3
             var loginParamsObj = {
               clientId: '182c4600-e596-4d62-8a65-e9c7efb8f4d0',
@@ -45,7 +46,7 @@
                'user.display_name',
               ],
             };
-    
+
             // Mount Bitmoji Icon(s)
             snap.bitmojikit.mountBitmojiStickerPickerIcons(
               bitmojiWebPickerIconClass,
@@ -53,7 +54,7 @@
               loginParamsObj,
             );
           };
-    
+
           // Load the SDK asynchronously
           (function (d, s, id) {
             var js, sjs = d.getElementsByTagName(s)[0];
