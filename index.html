@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-  <head>
+    <head>
+          <title>Album Select</title>
+          <link rel="stylesheet" type="text/css" href="index.css"/>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+             rel="stylesheet">
+      </head>
 
-  </head>
 
   <body>
-    <div onClick="drawImage()" id="screen">
-      Select img: <input type="file" id="img">
-      Select audio: <input type="file" id="audio">
-    </div>  
+    <body background="testbackground.jpg">
+      <div class="center">
+                <p class="title">Click, Spam, and Listen!</p>
+    			<div class="center-wrapper">
+            Select img: <input type="file" id="img">
+            Select audio: <input type="file" id="audio">
+            <button onclick="location.href='static/hostgame/index.html';" class="host">Go!</button>
+    			</div>
+    		</div>
     <script src="./script.js"></script>
   </body>
+
+
+
+<!--
+    <div onClick="drawImage()" id="screen">
+
+    <button onclick="location.href='static/joingame/index.html';">Join</button>
+    </div> -->
