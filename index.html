@@ -8,15 +8,16 @@
 
 
   <body>
-    <body background="testbackground.jpg" onClick="drawImage(event)" id="screen" style="position: absolute; height:100%; width: 100%;">
-      <div class="center">
+    <body background="testbackground.jpg">
+      <div background="testbackground.jpg" onClick="drawImage(event)" id="screen" style="position: absolute; height:100%; width: 100%; z-index: -1;"></div>
+      <div class="center" style="z-index: 1" id="menu">
                 <p class="title">Click, Spam, and Listen!</p>
     			<div class="center-wrapper">
             Select img: <input type="file" id="img">
             Select audio: <input type="file" id="audio">
-            <button onclick="location.href='static/hostgame/index.html';" class="host">Go!</button>
+            <button onclick="start()" class="host">Go!</button>
     			</div>
-    		</div>
+        </div>
     <script src="./script.js"></script>
   </body>
 
