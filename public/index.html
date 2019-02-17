@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+          <title>Album Select</title>
+          <link rel="stylesheet" type="text/css" href="index.css"/>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+             rel="stylesheet">
+      </head>
+
+
+  <body id="page_body">
+    <body background="testbackground.jpg">
+      <div background="testbackground.jpg" onClick="drawImage(event)" id="screen" style="position: absolute; height:100%; width: 100%; z-index: -1;"></div>
+      <div class="center" style="z-index: 1" id="menu">
+                <p class="title">Click, Spam, and Listen!</p>
+    			<div class="center-wrapper">
+            Image Url: <input type="text" id="myFile" name="myFile">
+            Audio Url: <input type="text" id="myAudio">
+            <button onclick="start()" class="host">Go!</button>
+    			</div>
+        </div>
+
+        <div class="my-bitmoji-stickerpicker-icon-target"></div>
+        <script>
+           window.snapKitInit = function () {
+            // Argument 1
+            var bitmojiWebPickerIconClass =
+              'my-bitmoji-stickerpicker-icon-target';
+    
+            // Argument 2
+            var uiOptions = {
+              onStickerPickCallback:
+                function onStickerPickCallback(bitmojiImgURL){
+                  console.log(bitmojiImgURL);
+                  document.getElementById("myFile").value = bitmojiImgURL;
+                },
+              webpickerPosition: 'bottomRight',
+            };
+    
+            // Argument 3
+            var loginParamsObj = {
+              clientId: '182c4600-e596-4d62-8a65-e9c7efb8f4d0',
+              redirectURI: 'http://localhost:3000/index.html',
+              scopeList: [ // the list of scopes you are approved for
+               'user.bitmoji.avatar',
+               'user.display_name',
+              ],
+            };
+    
+            // Mount Bitmoji Icon(s)
+            snap.bitmojikit.mountBitmojiStickerPickerIcons(
+              bitmojiWebPickerIconClass,
+              uiOptions,
+              loginParamsObj,
+            );
+          };
+    
+          // Load the SDK asynchronously
+          (function (d, s, id) {
+            var js, sjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://sdk.snapkit.com/js/v1/login_bitmoji.js";
+            sjs.parentNode.insertBefore(js, sjs);
+          }(document, 'script', 'bitmojikit-sdk'));
+        </script>
+    <script src="./script.js"></script>
+  </body>
+
+
+
+<!--
+    <div onClick="drawImage()" id="screen">
+
+    <button onclick="location.href='static/joingame/index.html';">Join</button>
+    </div> -->
