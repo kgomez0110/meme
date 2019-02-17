@@ -8,14 +8,37 @@
 
 
 
-    <body id="page_body" background="testbackground.jpg">
+    <body id="page_body" style="background-color:#93bcff;">
       <div onClick="drawImage(event)" id="screen" style="position: absolute; height:100%; width: 100%; z-index: -1;"></div>
       <div class="center" style="z-index: 1" id="menu">
-                <p class="title">Click, Spam, and Listen!</p>
+
     			<div class="center-wrapper">
-            Sticker Url: <input type="text" id="myFile" name="myFile">
-            Audio Url: <input type="text" id="myAudio">
+          <div class="logodiv">
+            <img class="logo" src="./assets/memerdreamr.png">
+          </div>
+            <p class="title">Click, Spam, and Listen!</p>
+            Sticker URL: <input type="text" id="myFile" name="myFile">
             Background URL: <input type="text" id="myBackground" name="myBackground">
+            Select Audio: <select id="audioSelector">
+                            <option value="DaWae.mp3">DaWae</option>
+                            <option value="Thomas.mp3">Thomas</option>
+                            <option value="Eevee.mp3">Eevee</option>
+                            <option value="RickRoll.mp3">RickRoll</option>
+                            <option value="EpicSax.mp3">EpicSax</option>
+                            <option value="BillNye1.mp3">BillNye1</option>
+                            <option value="BillNye2.mp3">BillNye2</option>
+                            <option value="CoryInTheHouse.mp3">CoryInTheHouse</option>
+                            <option value="WiiShop.mp3">WiiShop</option>
+                            <option value="MiiChannel.mp3">MiiChannel</option>
+                            <option value="Pikachu1.mp3">Pikachu1</option>
+                            <option value="Pikachu2.mp3">Pikachu2</option>
+                            <option value="Pikachu3.mp3">Pikachu3</option>
+                            <option value="Pikachu4.mp3">Pikachu4</option>
+                            <option value="Pikachu5.mp3">Pikachu5</option>
+                            <option value="Pikachu6.mp3">Pikachu6</option>
+                            <option value="Pikachu7.mp3">Pikachu7</option>
+                            <option value="PikachuSong.mp3">PikachuSong</option>
+                          </select>
             <button onclick="start()" class="host">Go!</button>
     			</div>
         </div>
