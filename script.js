@@ -9,9 +9,10 @@ function drawImage(event) {
     console.log(old_html);
     var x = event.clientX;
     var y = event.clientY;
+    var uploadedFile = document.getElementById("myFile");
     console.log(x);
     console.log(y);
-    document.getElementById("screen").innerHTML = old_html + '\n <img src="./red.jpg" style="position: absolute; left:' + x + 'px; top:' + y + 'px; z-index: ' + z + ';">'; 
+    document.getElementById("screen").innerHTML = old_html + '\n <img src=' + string(uploadedFile) + 'style="position: absolute; left:' + x + 'px; top:' + y + 'px; z-index: ' + z + ';">';
     z++;
     console.log(z);
   }
