@@ -1,19 +1,23 @@
 <img src="./public/assets/memerdreamr.png"
      alt="Logo"
      style="float: left;" />
+     
+Winner of Best Use of Snap Kit at Uncommon Hacks 2019.
 
 ## Try it out!
 This website is best experienced spoiler free: www.memerdreamr.com
 
-Winner of Best Use of Snap Kit at Uncommon Hacks 2019.
-
-
+Simply upload a Sticker using a URL (we recommend any gif), pick a sound, and click away!
 
 ## Inspiration
 I've seen fun websites like this in the past but never a website that could generate based off of user input. 
 
 ## What it does
 Takes in two user images and a sound from a soundboard to make a fun little app where users can click around.
+
+<img src="memerdreamr2.gif"
+     alt="Logo"
+     style="float: left;" />
 
 ## How we built it
 Lots and lots of debugging node.js and javascript as well as formatting HTML and CSS by hand to make it look nice.
