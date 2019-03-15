@@ -5,6 +5,10 @@
 ## Try it out!
 This website is best experienced spoiler free: www.memerdreamr.com
 
+Winner of Best Use of Snap Kit at Uncommon Hacks 2019.
+
+
+
 ## Inspiration
 I've seen fun websites like this in the past but never a website that could generate based off of user input. 
 
